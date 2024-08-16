@@ -52,11 +52,11 @@
         "terminal.border": "#000000",
         "terminal.foreground": "#ffffff",
         "terminal.ansiBlack": "#000000",
-        "terminal.ansiRed": "#cd5c5c",
-        "terminal.ansiGreen": "#87af5a",
+        "terminal.ansiRed": "#ffa0a0",
+        "terminal.ansiGreen": "#86d886",
         "terminal.ansiYellow": "#f0e68c",
         "terminal.ansiBlue": "#87ceeb",
-        "terminal.ansiMagenta": "#cd5c5c",
+        "terminal.ansiMagenta": "#ffa0a0",
         "terminal.ansiCyan": "#ffdab9",
         "terminal.ansiWhite": "#ffffff",
         "titleBar.activeBackground": "#333333",
@@ -89,7 +89,7 @@
             }
         },{
             "name": "Identifier",
-            "scope": ["variable","support.variable","entity.name.function"],
+            "scope": ["variable","support.variable"],
             "settings": {
                 "foreground": "#ffffff"
             }
@@ -98,7 +98,7 @@
        
         {
             "name": "Statement",
-            "scope": ["keyword", "storage", "support.type", "support.class"],
+            "scope": ["keyword", "storage.function", "support.type", "support.class"],
             "settings": {
                 "foreground": "#f0e68c"
             }
@@ -115,16 +115,24 @@
             "name": "PreProc",
             "scope": ["entity.name.function.preprocessor", "meta.preprocessor"],
             "settings": {
-                "foreground": "#cd5c5c"
+                "foreground": "#ffa0a0"
             }
         },
         {
             "name": "Type",
             "scope": ["storage.type", "support.type"],
             "settings": {
-                "foreground": "#87af5a"
+                "foreground": "#F0E68C"
             }
-        },{
+        },
+        {
+            "name": "Type",
+            "scope": ["storage.type.function"],
+            "settings": {
+                "foreground": "#F0E68C"
+            }
+        }
+        ,{
             "name": "Type",
             "scope": ["support.type.property-name"],
             "settings": {
@@ -178,6 +186,22 @@
             "settings": {
                 "foreground": "#ffffff",
             }
+        }
+        ,{
+            "name": "var other",
+            "scope": ["variable.other", "entity.name.function"],
+            "settings": {
+                "foreground": "#86d886",
+            }
         },
+
+            {
+                "name": "Parenthisis",
+                "scope":["punctuation.expression.bracket.round"],
+                "settings": {
+                    "foreground": "#fedead"
+                }
+            }
+        
     ]
 }
