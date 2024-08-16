@@ -3,6 +3,12 @@ on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '1.0.0'
+        required: true
+        default: ''
 
 jobs:
   publish:
@@ -12,7 +18,17 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm ci
+      - name: Install dependencies
+        run: npm ci
+      - name: Update version if manually triggered
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add package.json
+          git commit -m "Bump version to ${{ github.event.inputs.version }}"
+          git push
       - name: Publish to Visual Studio Marketplace
         uses: HaaLeo/publish-vscode-extension@v1
         with:
