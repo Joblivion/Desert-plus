@@ -1,11 +1,32 @@
 {
   "name": "desert-vim",
   "displayName": "desert.vim",
-  "description": "a port of the renowned \"desert.vim\" theme",
+  "description": "a port/interpretation of the renowned \"desert.vim\" theme",
   "version": "0.0.1",
+  "publisher": "AFLO",
+  "author": {
+    "name": "Ayoob",
+    "email": "ayoob.florival@gmail.com"
+  },
+  "homepage": "https://github.com/Ayoobf/desert-vim",
+  "bugs": {
+    "email": "rflooivl@gmail.com"
+  },
   "engines": {
     "vscode": "^1.92.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ayoobf/desert-vim"
+  },
+  "keywords": [
+    "theme",
+    "dark theme",
+    "desert.vim",
+    "vim",
+    "desert"
+  ],
+
   "categories": [
     "Themes"
   ],
@@ -17,5 +38,10 @@
         "path": "./themes/desert.vim-color-theme.json"
       }
     ]
+  } ,
+  "icon": "images/image.png",
+  "galleryBanner": {
+    "color": "#a196ff",
+    "theme": "dark"
   }
 }
