@@ -103,6 +103,14 @@
                 "foreground": "#f0e68c"
             }
         },
+        
+        {
+            "name": "Statement",
+            "scope": ["support.type.property-name"],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
         {
             "name": "PreProc",
             "scope": ["entity.name.function.preprocessor", "meta.preprocessor"],
