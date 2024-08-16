@@ -8,9 +8,14 @@
         "editor.selectionBackground": "#4d4d4d",
         "editor.lineHighlightBackground": "#4d4d4d",
         "editorWarning.foreground": "#f0e68c",
-        "editorLineNumber.foreground": "#ffff50",
+        "editorLineNumber.foreground": "#4d4d4d",
         "editorLineNumber.activeForeground": "#ffff50",
         "editorBracketHighlight.foreground1": "#ffffff",
+        "editorBracketHighlight.foreground2": "#ffffff",
+        "editorBracketHighlight.foreground3": "#ffffff",
+        "editorBracketHighlight.foreground4": "#ffffff",
+        "editorBracketHighlight.foreground5": "#ffffff",
+        "editorBracketHighlight.foreground6": "#ffffff",
         "editorGroupHeader.tabsBackground":"#4d4d4d",
         "statusBar.background": "#c2bfa5",
         "statusBar.foreground": "#000000",
@@ -48,7 +53,7 @@
         "terminal.foreground": "#ffffff",
         "terminal.ansiBlack": "#000000",
         "terminal.ansiRed": "#cd5c5c",
-        "terminal.ansiGreen": "#9acd32",
+        "terminal.ansiGreen": "#87af5a",
         "terminal.ansiYellow": "#f0e68c",
         "terminal.ansiBlue": "#87ceeb",
         "terminal.ansiMagenta": "#cd5c5c",
@@ -89,6 +94,7 @@
                 "foreground": "#ffffff"
             }
         },
+        
        
         {
             "name": "Statement",
@@ -108,7 +114,7 @@
             "name": "Type",
             "scope": ["storage.type", "support.type"],
             "settings": {
-                "foreground": "#98fb98"
+                "foreground": "#87af5a"
             }
         },
         {
@@ -141,7 +147,7 @@
         },
         {
             "name": "Strings",
-            "scope": ["string"],
+            "scope": ["string.quoted"],
             "settings": {
                 "foreground": "#ffa0a0"
             }
@@ -151,6 +157,12 @@
             "scope": ["constant.numeric"],
             "settings": {
                 "foreground": "#ffa0a0"
+            }
+        },{
+            "name": "Import",
+            "scope": ["string.quoted.other"],
+            "settings": {
+                "foreground": "#ffffff",
             }
         },
     ]
