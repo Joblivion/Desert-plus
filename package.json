@@ -2,7 +2,7 @@
   "name": "desert-vim",
   "displayName": "desert.vim",
   "description": "a port/interpretation of the renowned \"desert.vim\" theme",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "AFLO",
   "author": {
     "name": "Ayoob",
