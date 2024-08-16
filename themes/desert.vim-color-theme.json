@@ -1,0 +1,156 @@
+{
+    "name": "Desert",    
+    "colors": {
+        "editor.background": "#333333",
+        "editor.foreground": "#ffffff",
+        "editorCursor.foreground": "#ffffff",
+        "editorCursor.background": "#708090",
+        "editor.selectionBackground": "#4d4d4d",
+        "editor.lineHighlightBackground": "#4d4d4d",
+        "editorLineNumber.foreground": "#ffff50",
+        "editorLineNumber.activeForeground": "#ffff50",
+        "editorBracketHighlight.foreground1": "#ffffff",
+        "editorGroupHeader.tabsBackground":"#4d4d4d",
+        "statusBar.background": "#c2bfa5",
+        "statusBar.foreground": "#000000",
+        "statusBar.noFolderBackground": "#c2bfa5",
+        "statusBar.noFolderForeground": "#000000",
+        "statusBarItem.hoverBackground": "#d4d0c8",
+        "sideBar.background": "#333333",
+        "sideBar.foreground": "#ffffff",
+        "list.activeSelectionBackground": "#4d4d4d",
+        "list.activeSelectionForeground": "#ffffff",
+        "list.inactiveSelectionBackground": "#4d4d4d",
+        "list.inactiveSelectionForeground": "#ffffff",
+        "list.hoverBackground": "#4d4d4d",
+        "list.hoverForeground": "#ffffff",
+        "input.background": "#4d4d4d",
+        "input.foreground": "#ffffff",
+        "input.placeholderForeground": "#a0a0a0",
+        "inputOption.activeBorder": "#f0e68c",
+        "button.background": "#4d4d4d",
+        "button.foreground": "#ffffff",
+        "button.hoverBackground": "#c2bfa5",
+        "dropdown.background": "#4d4d4d",
+        "dropdown.foreground": "#ffffff",
+        "panel.background": "#333333",
+        "panel.border": "#333333",
+        "panelTitle.activeForeground": "#ffffff",
+        "panelTitle.inactiveForeground": "#a0a0a0",
+        "badge.background": "#cd5c5c",
+        "badge.foreground": "#ffffff",
+        "tab.border": "#333333",
+        "tab.activeForeground":"#ffffff",
+        "tab.inactiveForeground": "default",
+        "terminal.background": "#333333",
+        "terminal.border": "#000000",
+        "terminal.foreground": "#ffffff",
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiRed": "#cd5c5c",
+        "terminal.ansiGreen": "#9acd32",
+        "terminal.ansiYellow": "#f0e68c",
+        "terminal.ansiBlue": "#87ceeb",
+        "terminal.ansiMagenta": "#cd5c5c",
+        "terminal.ansiCyan": "#ffdab9",
+        "terminal.ansiWhite": "#ffffff",
+        "titleBar.activeBackground": "#333333",
+        "titleBar.inactiveBackground": "#333333",
+        "editorOverviewRuler.border": "#00000000" //this bitch is not fun to find lol
+    },
+    "tokenColors": [
+         
+        {
+            "name": "Assignment Operator",
+            "scope": [
+                "keyword.operator",
+            ],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": ["comment", "punctuation.definition.comment"],
+            "settings": {
+                "foreground": "#87ceeb"
+            }
+        },
+        {
+            "name": "Constant",
+            "scope": ["constant", "variable.other.constant"],
+            "settings": {
+                "foreground": "#ffa0a0"
+            }
+        },{
+            "name": "Identifier",
+            "scope": ["variable","support.variable","entity.name.function"],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+       
+        {
+            "name": "Statement",
+            "scope": ["keyword", "storage", "support.type", "support.class"],
+            "settings": {
+                "foreground": "#f0e68c"
+            }
+        },
+        {
+            "name": "PreProc",
+            "scope": ["entity.name.function.preprocessor", "meta.preprocessor"],
+            "settings": {
+                "foreground": "#cd5c5c"
+            }
+        },
+        {
+            "name": "Type",
+            "scope": ["storage.type", "support.type"],
+            "settings": {
+                "foreground": "#98fb98"
+            }
+        },
+        {
+            "name": "Special",
+            "scope": ["keyword.other.special-method", "meta.block-level"],
+            "settings": {
+                "foreground": "#ffdab9"
+            }
+        },
+        {
+            "name": "Error",
+            "scope": ["invalid", "invalid.illegal"],
+            "settings": {
+                "foreground": "#ffffff",
+            }
+        },
+        {
+            "name": "Todo",
+            "scope": ["todo", "keyword.other.todo"],
+            "settings": {
+                "foreground": "#ff4500",
+            }
+        },
+        {
+            "name": "Search",
+            "scope": ["entity.name.filename.find-in-files"],
+            "settings": {
+                "foreground": "#f0e68c",
+            }
+        },
+        {
+            "name": "Strings",
+            "scope": ["string"],
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "Numbers",
+            "scope": ["constant.numeric"],
+            "settings": {
+                "foreground": "#ffa0a0"
+            }
+        },
+    ]
+}
