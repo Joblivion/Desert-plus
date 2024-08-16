@@ -116,6 +116,12 @@
             "settings": {
                 "foreground": "#87af5a"
             }
+        },{
+            "name": "Type",
+            "scope": ["support.type.property-name"],
+            "settings": {
+                "foreground": "#ffffff"
+            }
         },
         {
             "name": "Special",
