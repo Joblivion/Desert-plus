@@ -5,6 +5,7 @@ Fork of [desert](https://github.com/Ayoobf/desert-vim)
 
 - With semantic tokens
 - Modified textMate token color rules
+- To be made into a vscode extension package when ready
 
 ## Acknowledgements
 
