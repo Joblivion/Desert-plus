@@ -1,5 +1,33 @@
 {
-    "name": "Desert",    
+    "name": "Desert+",
+    "type": "dark",
+
+    "semanticTokenColors": {
+        "variable": "#87ceeb",
+        "parameter": "#ffdab9",
+        "property": "#ffffff",
+        "function": "#86d886",
+        "method": "#86d886",
+        "class": "#f0e68c",
+        "interface": "#f0e68c",
+        "enum": "#f0e68c",
+        "type": "#f0e68c",
+        "typeParameter": "#f0e68c",
+        "keyword": "#ffa0a0",
+        "modifier": "#f0e68c",
+        "comment": "#c1dbe6",
+        "string": "#ffa0a0",
+        "number": "#ffa0a0",
+        "regexp": "#ffdab9",
+        "operator": "#ffffff",
+        "namespace": "#f0e68c",
+        "builtinType": "#f0e68c",
+        "enumMember": "#ffa0a0",
+        "macro": "#ffa0a0",
+        "label": "#f0e68c"
+    },
+    "semanticClass": "Desert+",
+
     "colors": {
         "editor.background": "#333333",
         "editor.foreground": "#ffffff",
@@ -61,147 +89,150 @@
         "terminal.ansiWhite": "#ffffff",
         "titleBar.activeBackground": "#333333",
         "titleBar.inactiveBackground": "#333333",
-        "editorOverviewRuler.border": "#00000000" //this bitch is not fun to find lol
+        "editorOverviewRuler.border": "#00000000"
     },
     "tokenColors": [
-         
         {
-            "name": "Assignment Operator",
+            "name": "Comments",
             "scope": [
-                "keyword.operator",
+                "comment",
+                "comment.block.documentation",
+				"punctuation.definition.comment",
+                "comment.block.documentation punctuation",
+                "string.quoted.docstring.multi",
+                "string.quoted.docstring.multi.python punctuation.definition.string.begin",
+                "string.quoted.docstring.multi.python punctuation.definition.string.end",
+                "string.quoted.docstring.multi.python constant.character.escape"
             ],
             "settings": {
-                "foreground": "#ffffff"
+                "fontStyle": "italic",
+                "foreground": "#c1dbe6"
+            } 
+        },
+        {
+            "name": "Static, const",
+            "scope": [
+                "storage.modifier"
+            ],
+            "settings": {
+                "fontStyle": "italic"
             }
         },
         {
-            "name": "Comment",
-            "scope": ["comment", "punctuation.definition.comment"],
-            "settings": {
-                "foreground": "#87ceeb"
-            }
-        },
-        {
-            "name": "Constant",
-            "scope": ["constant", "variable.other.constant"],
-            "settings": {
-                "foreground": "#ffa0a0"
-            }
-        },{
-            "name": "Identifier",
-            "scope": ["variable","support.variable"],
-            "settings": {
-                "foreground": "#ffffff"
-            }
-        },
-        
-       
-        {
-            "name": "Statement",
-            "scope": ["keyword", "storage.function", "support.type", "support.class"],
-            "settings": {
-                "foreground": "#f0e68c"
-            }
-        },
-        
-        {
-            "name": "Statement",
-            "scope": ["support.type.property-name"],
-            "settings": {
-                "foreground": "#ffffff"
-            }
-        },
-        {
-            "name": "PreProc",
-            "scope": ["entity.name.function.preprocessor", "meta.preprocessor"],
+            "name": "Number, Boolean, Undefined, Null",
+            "scope": [
+                "variable.other.constant",
+                "punctuation.definition.constant",
+                "constant.language",
+                "constant.numeric",
+                "support.constant",
+                "constant.other.caps" // Python global
+            ],
             "settings": {
                 "foreground": "#ffa0a0"
             }
         },
         {
-            "name": "Type",
-            "scope": ["storage.type", "support.type"],
+            "name": "String, Symbols",
+            "scope": [
+                "string",
+                "constant.other.symbol",
+                "constant.other.key",
+                "meta.attribute-selector",
+                "string constant.character"
+            ],
             "settings": {
-                "foreground": "#F0E68C"
+                "fontStyle": "",
+                "foreground": "#ffa0a0"
             }
         },
         {
-            "name": "Type",
-            "scope": ["storage.type.function"],
+            "name": "Colors",
+            "scope": [
+                "constant.other.color",
+                "constant.other.color.rgb-value.hex punctuation.definition.constant"
+            ],
             "settings": {
-                "foreground": "#F0E68C"
-            }
-        }
-        ,{
-            "name": "Type",
-            "scope": ["support.type.property-name"],
-            "settings": {
-                "foreground": "#ffffff"
+                "foreground": "#ffa0a0"
             }
         },
         {
-            "name": "Special",
-            "scope": ["keyword.other.special-method", "meta.block-level"],
+            "name": "Keyword",
+            "scope": [
+                "keyword",
+                "keyword.control",
+                "keyword.other.important",
+            ],
             "settings": {
                 "foreground": "#ffdab9"
             }
         },
         {
-            "name": "Error",
-            "scope": ["invalid", "invalid.illegal"],
+            "name": "Variables",
+            "scope": [
+                "variable",
+                "support.variable",
+                "string constant.other.placeholder",
+                "variable.parameter.handlebars",
+                "variable.other.object",
+                "meta.fstring",
+                "meta.function-call meta.function-call.arguments",
+                "meta.embedded.inline.phpx constant.other.php"
+            ],
             "settings": {
-                "foreground": "#ffffff",
+                "foreground": "#87ceeb"
             }
         },
         {
-            "name": "Todo",
-            "scope": ["todo", "keyword.other.todo"],
+            "name": "Variable Definition",
+            "scope": [
+                "meta.definition.variable variable.other.constant",
+                "meta.definition.variable variable.other.readwrite",
+                "variable.declaration.hcl variable.other.readwrite.hcl",
+                "meta.mapping.key.hcl variable.other.readwrite.hcl",
+                "variable.other.declaration"
+            ],
             "settings": {
-                "foreground": "#ff4500",
+                "foreground": "#87ceeb"
             }
         },
         {
-            "name": "Search",
-            "scope": ["entity.name.filename.find-in-files"],
+            "name": "Function Definition",
+            "scope": [
+                "entity.name.function",
+                "variable.other.enummember",
+                "meta.function-call",
+                "meta.function-call entity.name.function",
+                "variable.function",
+                "meta.definition.method entity.name.function",
+                "meta.object-literal entity.name.function"
+            ],
             "settings": {
-                "foreground": "#f0e68c",
+                "foreground": "#86d886"
             }
         },
         {
-            "name": "Strings",
-            "scope": ["string.quoted"],
+            "name": "Function Argument",
+            "scope": [
+                "variable.parameter.function.language.special",
+                "variable.parameter",
+                "meta.function.parameters punctuation.definition.variable",
+                "meta.function.parameter variable"
+            ],
             "settings": {
-                "foreground": "#ffa0a0"
+                "foreground": "#ffdab9"
             }
         },
         {
-            "name": "Numbers",
-            "scope": ["constant.numeric"],
+            "name": "Class Name",
+            "scope": [
+                "entity.name",
+                "storage.type.built-in",
+                "support.type.posix-reserved"
+            ],
             "settings": {
-                "foreground": "#ffa0a0"
-            }
-        },{
-            "name": "Import",
-            "scope": ["string.quoted.other"],
-            "settings": {
-                "foreground": "#ffffff",
-            }
-        }
-        ,{
-            "name": "var other",
-            "scope": ["variable.other", "entity.name.function"],
-            "settings": {
-                "foreground": "#86d886",
+                "foreground": "#f0e68c"
             }
         },
-
-            {
-                "name": "Parenthisis",
-                "scope":["punctuation.expression.bracket.round"],
-                "settings": {
-                    "foreground": "#fedead"
-                }
-            }
-        
     ]
 }
