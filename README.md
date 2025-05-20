@@ -1,12 +1,12 @@
 
-# desert.vim
+# Desert+
 
-A port of the legacy [desert.vim](https://github.com/vim/colorschemes/blob/master/legacy_colors/desert.vim) extension for use in VsCode.
+Fork of [desert](https://github.com/Ayoobf/desert-vim)
 
-## Demo
-
-![demo](images/demo.png)
+- With semantic tokens
+- Modified textMate token color rules
 
 ## Acknowledgements
 
 - [desert.vim](https://github.com/vim/colorschemes/blob/master/legacy_colors/desert.vim)
+- [desert](https://github.com/Ayoobf/desert-vim)
